@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+html {
+    background-image: url('./ocean.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p {
+    margin: 2px;
+    font-size: 30px;
+    color: white;
+}
+
+.hearts1 {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    margin-top: 30px; 
+}
+
+.hearts2 {
+    border: 1px solid black;
+    display: block;
+}
+
+.contagem1 {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black; 
+}
+
+.contagem2 {
+    border: 1px solid black; 
+}
+
+#questions1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    margin-top: 30px;
+}
+
+.questions2 {
+    border: 1px solid black;
+    width: 50%;
+    height: 150px;
+    background-color: rgba(63, 174, 226, 0.63);
+    text-align: center;
+}
+
+.btns {
+    display: flex;
+}
+
+.btn2 {
+    align-self: flex-end;
+    margin: 5px;
+    font-size: 16px;
+    padding: 12px;
+    color: #a7afaa;
+    background-color: #2a2b2a;
+    transition-duration: 0.4s;
+    border: 2px solid #a7afaa;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: grab;
+}
+
+.btn2:hover {
+    background-color: #628e71;
+    color: white;
+    border: 2px solid white;
+}
+
+.inital-page1 {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    width: 50%;
+    height: 50%;
+    background-color: rgba(63, 174, 226, 0.63);
+}
+
+.initial-page2 {
+    border: 1px solid black;
+}
+
+.ul1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(63, 174, 226, 0.63);
+
+}
+
+.ul2 {
+
+}
+
+.score1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    text-align: center;
+    margin: 100px 10px;
+}
+
+.score2 {
+    border: 1px solid black;
+    background-color: rgba(63, 174, 226, 0.63);
+    width: 50%;
+}
