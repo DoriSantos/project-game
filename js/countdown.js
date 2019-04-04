@@ -1,15 +1,34 @@
-var timeleft = 20;
-let $hearts = document.getElementsByClassName("hearts2")
-var downloadTimer = setInterval(function(){
+var intervalId = null
+
+function time() {
+  if (intervalId) {
+    clearInterval(intervalId);
+  }
+  intervalFunction()
+  intervalId = setInterval(intervalFunction, 1000);
+}
+
+function intervalFunction () {
   if (!isQuestionAnswered) {
     timeleft -= 1;
   }
   document.getElementById("countdown").innerHTML = timeleft + " ";
-  if(timeleft === 0){
+  if (timeleft === 0) {
+    console.log('LOOOOL')
+    let $hearts = document.getElementsByClassName("hearts1")[0]
     isQuestionAnswered = true
-    renderQuestion()
-    $hearts[$hearts.length-1].style.display = "none";
-    // clearInterval(downloadTimer);
+
+    if ($hearts.childNodes.length != 0) {
+      $hearts.removeChild($hearts.lastElementChild);
+      if ($hearts.childNodes.length === 0) {
+        //show game over
+
+      }
+    }
+
+    clearInterval(intervalId);
+    intervalId = null
     // document.getElementById("countdown").innerHTML = " "
+    renderQuestion()
   }
-}, 1000);
+}

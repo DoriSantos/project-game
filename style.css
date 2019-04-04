@@ -4,37 +4,43 @@
 }
 
 html {
-    background-image: url('./ocean.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./ocean.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
 }
 
 p {
-    margin: 2px;
-    font-size: 30px;
+    margin: 20px;
+    font-size: 40px;
     color: white;
-}
-
-.hearts1 {
-    display: flex;
-    justify-content: center;
-    border: 1px solid black;
-    margin-top: 30px; 
-}
-
-.hearts2 {
-    border: 1px solid black;
-    display: block;
 }
 
 .contagem1 {
     display: flex;
-    justify-content: center;
-    border: 1px solid black; 
+    justify-content: space-between;
+    /* border: 1px solid black;  */
 }
 
 .contagem2 {
-    border: 1px solid black; 
+    /* border: 1px solid black;  */
+    background-color: rgba(230, 230, 230, 0.678);
+    color: #2c207e;
+    padding: 10px;
+    margin-top: 25px;
+    padding: 0px 15px;
+    font-size: 30px;
+    height: 80px;
+    border-radius: 80px;
+    min-width: 80px;
+    text-align: center;
+    line-height: 80px;
+    box-sizing: border-box;
 }
 
 #questions1 {
@@ -42,16 +48,23 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-top: 30px;
 }
 
 .questions2 {
-    border: 1px solid black;
-    width: 50%;
-    height: 150px;
-    background-color: rgba(63, 174, 226, 0.63);
+    border: 4px solid rgb(56, 56, 56);
+    border-radius: 20px;
+    width: 100%;
+    min-height: 150px;
+    background-color: rgba(255, 255, 255, 0.726);
+    color: #2c207e;
     text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
 }
 
 .btns {
@@ -63,43 +76,31 @@ p {
     margin: 5px;
     font-size: 16px;
     padding: 12px;
-    color: #a7afaa;
+    color: #ffffff;
     background-color: #2a2b2a;
     transition-duration: 0.4s;
-    border: 2px solid #a7afaa;
+    border: 2px solid #e0e7e2;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 30px;
     cursor: grab;
 }
 
 .btn2:hover {
-    background-color: #628e71;
+    background-color: rgb(24, 70, 100);
     color: white;
     border: 2px solid white;
 }
 
-.inital-page1 {
-    display: flex;
-    justify-content: center;
-    border: 1px solid black;
-    width: 50%;
-    height: 50%;
-    background-color: rgba(63, 174, 226, 0.63);
+.btn2.wrong-answer, .btn2.wrong-answer:hover {
+    background-color: #b30000;
 }
 
-.initial-page2 {
-    border: 1px solid black;
+.btn2.correct-answer, .btn2.correct-answer:hover {
+    background-color: rgb(51, 195, 59);
+    color: rgb(54, 47, 47);
 }
 
-.ul1 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: rgba(63, 174, 226, 0.63);
-
-}
-
-.ul2 {
+.start {
 
 }
 
@@ -108,13 +109,81 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     text-align: center;
     margin: 100px 10px;
 }
 
 .score2 {
-    border: 1px solid black;
-    background-color: rgba(63, 174, 226, 0.63);
+    /* border: 1px solid black; */
+    background-color: rgba(192, 226, 241, 0.849);
+    width: 15%;
+}
+
+#inital {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
     width: 50%;
+    height: 50%;
+    background-color: rgba(63, 174, 226, 0.63);
+    align-items: center;
+    padding: 20px;
+    border: rgba(255, 255, 255, 0.774);
+    border-width: 10px;
+    position: absolute;
+}
+
+.inital-page1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 46px auto;
+    max-width: 1300px;
+    height: 56%;
+    background-color: white;
+    border: 5px solid rgb(50, 150, 218);
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.initial-page2 {
+    color: rgb(54, 47, 47);
+    text-align: center;
+    padding: 10px;
+}
+
+.ul1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ul2 {
+    list-style-type:none;
+    text-align: center;
+    font-size: 25px;
+    color: #2c2c2c;
+    margin-top: 40px;
+}
+
+.img.resize {
+        width:440px;
+        height: auto;
+    }
+
+.img {
+    margin-top: 97px;
+}
+
+.txt {
+    position: absolute;
+    color: #526e6e;
+}
+
+.final1 {
+    text-align: center;
+    background-color: rgb(230, 230, 230);
+    padding: 2%;
+    box-shadow: 10px 10px 5px grey;
 }

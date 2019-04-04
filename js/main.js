@@ -1,27 +1,43 @@
 // Score:
-// 1 second = 10 points
-// Maximum score in a row = 200 points (20 seconds)
+// right answer = 100 points
 
-
-let nbOfHearts = 3
+var timeleft = 25;
+// let nbOfHearts = 3
 let score = 0
 let currentQuestionIndex = 0
 let isQuestionAnswered = false
 let $question = document.getElementById("questions1")
 
 
-function loseHeartsTime() {
-    if (timeleft === 0) {
-        $hearts[$hearts.length-1].style.display = "none";
+// function showhideFinal() {
+//     var final = document.getElementById("final");
+//     if (final.style.display !== "block") {
+//         final.style.display = "block";
+//     }
+//     else {
+//         final.style.display = "none";
+//     }
+// }
+
+var button = document.getElementById('button');
+
+button.onclick = function() {
+    var initial = document.getElementById('initial');
+    if (initial.style.display !== 'none') {
+        initial.style.display = 'none';
     }
-}
+    else {
+        initial.style.display = 'block';
+    }
+    time();
+};
 
 
-function questionHearts() {
-    if (isQuestionAnswered === false) {
-        return $hearts.style.display = "none";
-    }
-}
+// function questionHearts() {
+//     if (isQuestionAnswered === false) {
+//         return $hearts.style.display = "none";
+//     }
+// }
 
 
 function renderQuestion() {
@@ -37,7 +53,19 @@ function renderQuestion() {
     innerHTML += `<p class="questions2">${currentQuestion.title}</p>`
     innerHTML += `<div class='btns'>`
     for (let iAnswer = 0; iAnswer < currentQuestion.answers.length; iAnswer++) {
-        innerHTML += `  <button class="btn2">${currentQuestion.answers[iAnswer].text}</button>`
+        let className = "btn2"
+        if (isQuestionAnswered) {
+            if (currentQuestion.answers[iAnswer].isCorrect)  // Hint: use currentQuestion and iAnswer
+            {
+                className += " correct-answer"
+                console.log("lol")
+            }
+            else {
+                console.log("wrong")
+                className += " wrong-answer"
+            }
+        }
+        innerHTML += `  <button class="${className}">${currentQuestion.answers[iAnswer].text}</button>`
     }
     innerHTML += `</div>`
     innerHTML += `</div>`
@@ -54,18 +82,21 @@ function renderQuestion() {
         $button.onclick = event => {
             let isCorrect = questions[currentQuestionIndex].answers[iAnswer].isCorrect
             if (isCorrect && !isQuestionAnswered) {
-                score += 100
+                score += 100 + timeleft*10
+                // score += timeleft * 10
+
                 renderScore()
             }
             isQuestionAnswered = true
             renderQuestion()
         }
     })
-    
+
     let $nextButton = document.querySelector("#next")
     if ($nextButton) {
         $nextButton.onclick = event => {
-            timeleft = 20
+            timeleft = 25
+            time()
             currentQuestionIndex++
             isQuestionAnswered = false
             renderQuestion()
@@ -75,10 +106,9 @@ function renderQuestion() {
 
 
 function renderScore() {
-    document.getElementById('score').innerText=score
+    document.getElementById('score').innerText = score
 }
 
 renderQuestion()
-loseHeartsTime()
 renderScore()
-
+// showhideInitial()

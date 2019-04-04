@@ -11,59 +11,63 @@
 </head>
 
 <body>
-  <section id="section1">
-    <div class="hearts1"> 
-      <img class="hearts2" src="./heart.png" alt="heart" height="35" width="35">
-      <img class="hearts2" src="./heart.png" alt="heart" height="35" width="35">
-      <img class="hearts2" src="./heart.png" alt="heart" height="35" width="35">
-    </div>
-  </section>
 
-  <section id="section2">
-    <div class="contagem1">
-      <h2 id="countdown" class="contagem2"></h2>
-    </div>
+  <div class="container">
 
-    <div id="questions1">
-      <p class="questions2">What percentage of the Earth's surface is the area of the oceans?</p>
-      <div class="btns">
-        <button class="btn2">Around 70%</button>
-        <button class="btn2">60%</button>
-        <button class="btn2">Around 40%</button>
-        <button class="btn2">35%</button>
-      </div>
-    </div>
-    <div id="results"></div>
-  </section>
-
-  <!-- <section id="initial">
-    <div class="inital-page1">
+    <div id="initial" class="inital-page1">
       <h1 class="initial-page2">Into the Sea</h1>
       <p class="initial-page2">Ocean currents govern the world's weather and churn a kaleidoscope of life. Humans depend
         on
         these
         teeming water for comfort and survival, but global warming and overfishing threaten Earth's largest
         habitat. This
-        quiz intends to raise awareness in people to change behaviours.
+        quiz intends to raise awareness in people to change their behaviours.
       </p>
+      <div class="ul1">
+        <p>Rules</p>
+        <ul class="ul2">
+          <!-- <li>You begin the game with 3 lives</li> -->
+          <!-- <li>For 5 correct answer in a row you win one live</li> -->
+          <li>25 seconds to answer each question</li>
+          <li>Each correct answer you gain 100 points</li>
+          <!-- <li>The faster you answer, the higher score you make</li> -->
+        </ul>
+        <button onclick="showhide()" id="button" class="btn2 start">Start!</button>
+      </div>
     </div>
-    <div class="ul1">
-      <ul class="ul2">
-        <li>You begin the game with 3 lives</li>
-        <li>For 5 correct answer in a row you win one live</li>
-        <li>20 seconds to answer each question</li>
-        <li>The faster you answer, the higher score you make</li>
-      </ul>
+
+    <section id="section2">
+      <div class="contagem1">
+        <h2 class="contagem2">Score: <span id="score"></span></h2>
+        <h2 class="contagem2">
+          <span id="countdown"></span>
+        </h2>
+      </div>
+
+      <div id="questions1">
+        <p class="questions2">
+          What percentage of the Earth's surface is the area of the oceans?
+        </p>
+        <div class="btns">
+          <button class="btn2">Around 70%</button>
+          <button class="btn2">60%</button>
+          <button class="btn2">Around 40%</button>
+          <button class="btn2">35%</button>
+        </div>
+      </div>
+      <div id="results"></div>
+    </section>
+
+    <!-- <section id="final">
+    <div class="final1">
+      <p class="txt">Remember that recycle and avoid buying plastic is very important.<b><br>What doesn't end in the trash, sooner or later
+        will end in the ocean.</p>
+      <img class="img resize" src="./plastic-oceans-mts-1-1000x640.jpg" alt="plastic-fish">
     </div>
-    <button class="initial-page2">Start!</button>
   </section> -->
 
-  <section id="section3">
-    <div class="score1">
-      <h2 class="score2">Score</h2>
-      <h3 class="score2" id="score">score (numerical)</h3>
-    </div>
-  </section>
+  </div>
+
 
   <script src="js/countdown.js"></script>
   <script src="js/questions.js"></script>
