@@ -21,6 +21,12 @@ p {
     color: white;
 }
 
+.main-title {
+  font-family: 'Bad Script', cursive;
+  font-size: 120px;
+  color: white;
+}
+
 .contagem1 {
     display: flex;
     justify-content: space-between;
@@ -28,19 +34,20 @@ p {
 }
 
 .contagem2 {
-    /* border: 1px solid black;  */
-    background-color: rgba(230, 230, 230, 0.678);
-    color: #2c207e;
+    border: 4px solid rgb(216, 204, 44); 
+    background-color: rgba(216, 205, 44, 0.616);
+    color: #ffffff;
     padding: 10px;
-    margin-top: 25px;
+    margin-top: 110px;
     padding: 0px 15px;
-    font-size: 30px;
+    font-size: 45px;
     height: 80px;
     border-radius: 80px;
     min-width: 80px;
     text-align: center;
     line-height: 80px;
     box-sizing: border-box;
+    text-shadow: 1px 1px #333333;
 }
 
 #questions1 {
@@ -53,18 +60,19 @@ p {
 }
 
 .questions2 {
-    border: 4px solid rgb(56, 56, 56);
+    border: 4px solid #ffffff;
     border-radius: 20px;
     width: 100%;
     min-height: 150px;
     background-color: rgba(255, 255, 255, 0.726);
-    color: #2c207e;
+    color: #353535;
     text-align: center;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 900;
+    text-shadow: 1px 1px #535353
 }
 
 .btns {
