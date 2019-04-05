@@ -2,9 +2,9 @@ let questions = [{
     title: "What percentage of the Earth's surface is the area of the oceans?",
     answers: [
         { isCorrect: true, text: "Around 70%" },
-        { isCorrect: false, text: "Around 60%" },
+        { isCorrect: false, text: "60%" },
         { isCorrect: false, text: "Around 50%" },
-        { isCorrect: false, text: "Around 40%" },
+        { isCorrect: false, text: "40%" },
     ]
 },{
     title: "What happens to plastic waste?",
@@ -30,7 +30,7 @@ let questions = [{
         { isCorrect: false, text: "Landfills" },
         { isCorrect: false, text: "Recycled" },
     ]
-},{
+}/*,{
     title: "How many million tons of plastic are dumped in our oceans every year?",
     answers: [
         { isCorrect: false, text: "1 million tons" },
@@ -38,7 +38,7 @@ let questions = [{
         { isCorrect: false, text: "20 million tons" },
         { isCorrect: false, text: "50 million tons" },
     ]
-},{
+},*//*{
     title: "How many marine species are harmed by plastic pollution?",
     answers: [
         { isCorrect: false, text: "52" },
@@ -46,7 +46,7 @@ let questions = [{
         { isCorrect: false, text: "1,326" },
         { isCorrect: false, text: "5,489" },
     ]
-},{
+},*//*{
     title: "What percent of its plastic does the US recycle?",
     answers: [
         { isCorrect: true, text: "9%" },
@@ -54,21 +54,21 @@ let questions = [{
         { isCorrect: false, text: "50%" },
         { isCorrect: false, text: "75%" },
     ]
-},{
-    title: "There are 51 trillion microplastic particles in the ocean today—500 times more than the number of stars in our galaxy.",
-    answers: [
-        { isCorrect: true, text: "True" },
-        { isCorrect: false, text: "False" },
-    ]
-},{
-    title: "Approximately, Americans use about how many plastic drinking straws per day?",
-    answers: [
-        { isCorrect: false, text: "25,000" },
-        { isCorrect: false, text: "100,000" },
-        { isCorrect: false, text: "250,000,000" },
-        { isCorrect: true, text: "500,000,000" },
-    ]
-},{
+},*//*{
+    // title: "There are 51 trillion microplastic particles in the ocean today—500 times more than the number of stars in our galaxy.",
+    // answers: [
+    //     { isCorrect: true, text: "True" },
+    //     { isCorrect: false, text: "False" },
+    // ]
+// }*/,{
+//     title: "Approximately, Americans use about how many plastic drinking straws per day?",
+//     answers: [
+//         { isCorrect: false, text: "25,000" },
+//         { isCorrect: false, text: "100,000" },
+//         { isCorrect: false, text: "250,000,000" },
+//         { isCorrect: true, text: "500,000,000" },
+//     ]
+// },{
     title: "By what year do scientists predict plastic will outweigh fish in the ocean, pound for pound?",
     answers: [
         { isCorrect: false, text: "2020" },
@@ -76,7 +76,7 @@ let questions = [{
         { isCorrect: false, text: "2250" },
         { isCorrect: false, text: "3000" },
     ]
-},{
+},/*{
     title: "Which of the following answers contains the top 5 contributing countries to the world’s plastic pollution problem?",
     answers: [
         { isCorrect: false, text: "Russia, France, USA, Vietnam, India" },
@@ -84,7 +84,7 @@ let questions = [{
         { isCorrect: true, text: "Thailand, China, Indonesia, Vietnam, Philippines" },
         { isCorrect: false, text: "USA, China, India, UK, Australia" },
     ]
-},{
+}*/,{
     title: "Which of these countries have NOT made national plastic bag regulations?",
     answers: [
         { isCorrect: false, text: "Kenya" },
@@ -100,7 +100,7 @@ let questions = [{
         { isCorrect: false, text: "50%" },
         { isCorrect: false, text: "77%" },
     ]
-},{
+}/*,{
     title: "On average, how long is a plastic bag used by a person before being thrown away?",
     answers: [
         { isCorrect: true, text: "12 minutes" },
@@ -108,7 +108,7 @@ let questions = [{
         { isCorrect: false, text: "1 day" },
         { isCorrect: false, text: "1 week" },
     ]
-},{
+}*/,{
     title: "More than half of the breathable oxygen in the world comes from?",
     answers: [
         { isCorrect: true, text: "The oceans" },
@@ -116,7 +116,7 @@ let questions = [{
         { isCorrect: false, text: "Lakes" },
         { isCorrect: false, text: "Clouds" },
     ]
-},{
+}/*,{
     title: "How much water does it take to produce one bottle of water?",
     answers: [
         { isCorrect: false, text: "No water is used to produce plastic" },
@@ -132,4 +132,4 @@ let questions = [{
         { isCorrect: false, text: "20%" },
         { isCorrect: false, text: "50%" },
     ]
-}]
+}*/]

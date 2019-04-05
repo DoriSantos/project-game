@@ -4,27 +4,28 @@
 }
 
 html {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./ocean.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('./ocean.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
 }
 
 .container {
-    max-width: 1300px;
+    max-width: 1213px;
     margin: auto;
 }
 
 p {
-    margin: 20px;
+    margin: 5px;
     font-size: 40px;
     color: white;
 }
 
 .main-title {
   font-family: 'Bad Script', cursive;
-  font-size: 120px;
-  color: white;
+  font-size: 100px;
+  color: rgb(255, 255, 255);
+  text-shadow: 5px 1px #424242;
 }
 
 .contagem1 {
@@ -34,20 +35,23 @@ p {
 }
 
 .contagem2 {
-    border: 4px solid rgb(216, 204, 44); 
-    background-color: rgba(216, 205, 44, 0.616);
-    color: #ffffff;
     padding: 10px;
     margin-top: 110px;
     padding: 0px 15px;
-    font-size: 45px;
     height: 80px;
-    border-radius: 80px;
     min-width: 80px;
-    text-align: center;
     line-height: 80px;
     box-sizing: border-box;
+}
+
+.contagem3 {
+    font-size: 35px;
+    border: 4px solid rgb(216, 204, 44); 
+    background-color: rgba(216, 205, 44, 0.616);
+    color: #ffffff;
+    border-radius: 80px;
     text-shadow: 1px 1px #333333;
+    text-align: center;
 }
 
 #questions1 {
@@ -67,11 +71,11 @@ p {
     background-color: rgba(255, 255, 255, 0.726);
     color: #353535;
     text-align: center;
-    padding: 20px;
+    padding: 13px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 900;
+    font-weight: 300;
     text-shadow: 1px 1px #535353
 }
 
@@ -79,15 +83,18 @@ p {
     display: flex;
 }
 
-.btn2 {
-    align-self: flex-end;
-    margin: 5px;
-    font-size: 16px;
-    padding: 12px;
+.botoes {
     color: #ffffff;
     background-color: #2a2b2a;
+    border: 6px solid #2f2f2f;
+    align-self: flex-end;
+    font-size: 16px;
+}
+
+.btn2 {
+    margin: 5px;
+    padding: 12px;
     transition-duration: 0.4s;
-    border: 2px solid #e0e7e2;
     border-radius: 5px;
     font-size: 30px;
     cursor: grab;
@@ -109,7 +116,10 @@ p {
 }
 
 .start {
-
+    color:#ffffff;
+    background-color: #333333;
+    border: 2px solid #0a0a0a;
+    font-size: 38px;
 }
 
 .score1 {
@@ -128,6 +138,11 @@ p {
     width: 15%;
 }
 
+h1 {
+    font-size: 60px;
+    font-family: 'Bad Script', cursive;
+}
+
 #inital {
     display: flex;
     justify-content: center;
@@ -136,7 +151,7 @@ p {
     height: 50%;
     background-color: rgba(63, 174, 226, 0.63);
     align-items: center;
-    padding: 20px;
+    padding: 50px;
     border: rgba(255, 255, 255, 0.774);
     border-width: 10px;
     position: absolute;
@@ -158,7 +173,7 @@ p {
 .initial-page2 {
     color: rgb(54, 47, 47);
     text-align: center;
-    padding: 10px;
+    padding: 0px;
 }
 
 .ul1 {
@@ -176,22 +191,30 @@ p {
 }
 
 .img.resize {
-        width:440px;
+        width: 861px;
         height: auto;
     }
 
 .img {
-    margin-top: 97px;
+    margin-top: 8px;
+    /* border: 3px solid #642525; */
 }
 
 .txt {
-    position: absolute;
-    color: #526e6e;
+    color: #1d3838;
 }
 
 .final1 {
+    position: absolute;
     text-align: center;
     background-color: rgb(230, 230, 230);
     padding: 2%;
-    box-shadow: 10px 10px 5px grey;
+    border-radius: 1%;
+    border: 6px solid rgb(48, 163, 216)
+}
+
+#final {
+    position: absolute;
+    display: none;
+    margin-top: 2%;
 }

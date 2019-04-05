@@ -43,8 +43,8 @@ button.onclick = function() {
 function renderQuestion() {
     // If the game is over
     if (currentQuestionIndex >= questions.length) {
-        alert("GAME OVER")
-        return
+        // alert("GAME OVER")
+        final.style.display = "block";
     }
 
     let currentQuestion = questions[currentQuestionIndex]
