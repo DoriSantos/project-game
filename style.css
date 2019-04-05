@@ -17,7 +17,7 @@ html {
 
 p {
     margin: 5px;
-    font-size: 40px;
+    font-size: 30px;
     color: white;
 }
 
@@ -30,13 +30,13 @@ p {
 
 .contagem1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     /* border: 1px solid black;  */
 }
 
 .contagem2 {
     padding: 10px;
-    margin-top: 110px;
+    margin-top: 72px;
     padding: 0px 15px;
     height: 80px;
     min-width: 80px;
@@ -60,7 +60,7 @@ p {
     align-items: center;
     flex-direction: column;
     /* border: 1px solid black; */
-    margin-top: 30px;
+    margin-top: 7px;
 }
 
 .questions2 {
@@ -163,7 +163,7 @@ h1 {
     right: 0;
     margin: 46px auto;
     max-width: 1300px;
-    height: 56%;
+    height: 65%;
     background-color: white;
     border: 5px solid rgb(50, 150, 218);
     border-radius: 20px;
@@ -191,12 +191,12 @@ h1 {
 }
 
 .img.resize {
-        width: 861px;
+        width: 600px;
         height: auto;
     }
 
 .img {
-    margin-top: 8px;
+    margin-top: px;
     /* border: 3px solid #642525; */
 }
 
@@ -208,7 +208,7 @@ h1 {
     position: absolute;
     text-align: center;
     background-color: rgb(230, 230, 230);
-    padding: 2%;
+    padding: 3%;
     border-radius: 1%;
     border: 6px solid rgb(48, 163, 216)
 }
@@ -217,4 +217,5 @@ h1 {
     position: absolute;
     display: none;
     margin-top: 2%;
+    margin-left: 10%;
 }
