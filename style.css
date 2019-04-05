@@ -30,7 +30,7 @@ p {
 
 .contagem1 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around;https://prod.liveshare.vsengsaas.visualstudio.com/join?F89E686BA21DB769DA97FC1FE64D791FA8B3
     /* border: 1px solid black;  */
 }
 
@@ -139,7 +139,7 @@ p {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 100px;
     font-family: 'Bad Script', cursive;
 }
 
@@ -168,6 +168,10 @@ h1 {
     border: 5px solid rgb(50, 150, 218);
     border-radius: 20px;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
 }
 
 .initial-page2 {
@@ -191,31 +195,35 @@ h1 {
 }
 
 .img.resize {
-        width: 600px;
-        height: auto;
+        /* width: 600px; */
+        height: 28vw;
     }
 
 .img {
-    margin-top: px;
+    margin-top: 3%;
     /* border: 3px solid #642525; */
 }
 
 .txt {
+    margin-top: 2%;
     color: #1d3838;
-}
-
-.final1 {
-    position: absolute;
-    text-align: center;
-    background-color: rgb(230, 230, 230);
-    padding: 3%;
-    border-radius: 1%;
-    border: 6px solid rgb(48, 163, 216)
 }
 
 #final {
     position: absolute;
     display: none;
-    margin-top: 2%;
-    margin-left: 10%;
+    text-align: center;
+    background-color: rgb(230, 230, 230);
+    border-radius: 1%;
+    border: 6px solid rgb(48, 163, 216);
+    left: 0;
+    right: 0;
+    margin: 5vh auto 0 auto;
+    width: 75vw;
+    height: 40vw;
+}
+
+#initial-page-group{
+    display: flex;
+    flex-direction: column;
 }

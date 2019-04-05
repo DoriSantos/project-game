@@ -84,7 +84,7 @@ let questions = [{
         { isCorrect: true, text: "Thailand, China, Indonesia, Vietnam, Philippines" },
         { isCorrect: false, text: "USA, China, India, UK, Australia" },
     ]
-}*/,{
+}*/{
     title: "Which of these countries have NOT made national plastic bag regulations?",
     answers: [
         { isCorrect: false, text: "Kenya" },

@@ -14,18 +14,6 @@ function intervalFunction () {
   }
   document.getElementById("countdown").innerHTML = timeleft + " ";
   if (timeleft === 0) {
-    console.log('LOOOOL')
-    let $hearts = document.getElementsByClassName("hearts1")[0]
-    isQuestionAnswered = true
-
-    if ($hearts.childNodes.length != 0) {
-      $hearts.removeChild($hearts.lastElementChild);
-      if ($hearts.childNodes.length === 0) {
-        //show game over
-
-      }
-    }
-
     clearInterval(intervalId);
     intervalId = null
     // document.getElementById("countdown").innerHTML = " "
