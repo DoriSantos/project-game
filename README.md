@@ -1,4 +1,6 @@
-# This is the first project that I developed at Ironhack in one week.
+# Quiz - Marine and Water Pollution
+
+This is the first project that I developed at Ironhack in one week.
 
 It consist in a quiz with 8 questions, where you have 25 seconds to answer each one. 
 The faster you answer the more score you make.
