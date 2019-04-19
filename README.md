@@ -1,4 +1,4 @@
-# Quiz - Marine and Water Pollution
+# Quiz - Into the Sea
 
 This is the first project that I developed at Ironhack in one week.
 
